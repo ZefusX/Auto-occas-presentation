@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autos Occas</title>
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+       tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Animations-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body class="bg-[#202020] text-[#F2F0E3] dark:text-[#202020] dark:bg-[#F2F0E3] font-classic">
+    <div class="flex w-full items-center justify-between p-7">
+      <div class="flex flex-row gap-1">
+        <img
+          src="./assets/directions_car_24dp_F2F0E3_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=""
+          class="h-5 car mt-1"
+        />
+        <h2 class="text-xl underline">Auto occas</h2>
+      </div>
+
+      <div class="flex gap-6">
+        <a class="hover:underline transition duration-300 ease-in-out" href="#subsection_1">Documentation</a>
+        <a class="hover:underline transition duration-300 ease-in-out" href="https://autos-occas.streamlit.app/" target="_blank">Produit</a>
+        <a class="hover:underline transition duration-300 ease-in-out" href="mailto:zefuscode@gmail.com">Contact</a>
+      </div>
+
+
+      <button id="theme-toggle" type="button" class="rounded-lg text-sm p-1 cursor-none">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+
+
+    </div>
+      <div class="flex flex-col justify-center text-center">
+      <div class="mt-16 mx-6">
+        <h1 class="text-6xl font-bold">
+          Une
+          <span class="font-other-2 text-6xl font-bold italic">analyse</span>
+          de marché plus simple
+        </h1>
+      </div>
+      <p class="mt-4 text-xl">
+        <span class="underline">Un</span> seul outil pour <span class="underline">tout</span> comprendre
+      </p>
+    </div>
+    <div class="min-w-screen w-full flex justify-center gap-8 mt-24">
+      <button
+        class="rounded-xl cursor-none bg-[#F2F0E3] text-[#202020] dark:text-[#F2F0E3] dark:bg-[#202020] p-4 hover:bg-[#a8a79d] dark:hover:bg-[#30302d] transition duration-300"
+        onclick="location.href='#subsection_1'"
+      >
+        Découvrir
+      </button>
+      <button
+        class="rounded-xl cursor-none border-2 p-4 hover:bg-[#30302d] dark:hover:bg-[#a8a79d] border-[#F2F0E3] dark:border-[#202020] transition duration-300"
+        onclick="location.href='https://autos-occas.streamlit.app/'"
+      >
+        Accèder
+      </button>
+    </div>
+    
+    <hr class="mt-96 mx-12 dark:border-[#202020]" id="subsection_1" />
+    <div class="mx-6 mt-6 subsection">
+      <h2 class="text-6xl font-bold">De réelles données fiables</h2>
+      <p class="text-xl m-2">Expliquant les tendances du marché</p>
+      <div class="flex justify-center content-center mt-12 gap-4">
+        <img src="assets/newplot.png" alt="" class="h-64 rounded-xl border-2" />
+        <img
+          src="assets/newplot(1).png"
+          alt=""
+          class="h-64 rounded-xl border-2"
+        />
+        <img
+          src="assets/newplot(2).png"
+          alt=""
+          class="h-64 rounded-xl border-2"
+        />
+      </div>
+    </div>
+
+    <hr class="mt-12 mx-12 dark:border-[#202020]" />
+    <div class="mx-6 mt-6 subsection">
+      <h2 class="text-6xl font-bold">
+        Un estimateur de prix basé sur de vraies analyses
+      </h2>
+      <p class="text-xl m-2">
+        Avec des résultats proches de 99% (sondage de professionels)
+      </p>
+
+      <div class="mt-12 mx-8 w-3/4 bg-green-900 text-green-300 flex rounded-xl border border-2 border-green-300 p-2">
+        <p class="text-2xl">Prix estimé : 8924.28€</p>
+      </div>
+      <p class="text-xl m-2 mt-12">Une estimation instantanée du prix de n'importe quel véhicule</p>
+    </div>
+
+    <hr class="mx-12 mt-12 dark:border-[#202020]"/>
+    <div
+      class="cursor-default pt-4 text-[#202020] bg-[#F2F0E3] dark:bg-[#202020] dark:text-[#F2F0E3] flex-col justify-center text-center subsection gap-4 flex my-4"
+    >
+      <h1 class="text-6xl">Tout ça dans une seule application web</h1>
+      <p>Avec une offre <span>unique</span></p>
+      <h2 class="text-4xl font-bold">4.99€ par mois</h2>
+      <p>C'est ce que VOUS coûterai notre service</p>
+      <hr class="mx-96 p-2 border-[#202020] dark:border-[#F2F0E3]">
+
+      <div class="flex flex-col md:flex-row gap-5 justify-center align-center content-center w-full">
+        <div class="m-2 md:m-0 md:w-1/3 bg-[#202020] text-[#F2F0E3] dark:bg-[#F2F0E3] dark:text-[#202020] p-4 rounded">
+          <h2 class="text-3xl font-bold text-left">Notre service</h2>
+          <hr class="mr-6 dark:border-[#202020]" />
+          <ul class="align-left text-left flex-col gap-2 text-xl mt-1">
+            <li>✅ 4.99€ par mois</li>
+            <li>✅ Accès illimité</li>
+            <li>✅ Analyses complètes</li>
+            <li>✅ Données du jour même</li>
+            <li class="mt-6 italic">Environ 100 000 nouvelles données <span class="text-[#73A950]">fiables</span> par semaine</li>
+          </ul>
+        </div>
+        <div class="m-2 md:m-0 md:w-1/3 bg-[#202020] text-[#F2F0E3] dark:bg-[#F2F0E3] dark:text-[#202020] p-4 rounded">
+          <h2 class="text-3xl font-bold text-left">Services équivalents</h2>
+          <hr class="mr-6 dark:border-[#202020]" />
+          <ul class="align-left text-left flex-col gap-2 text-xl mt-1">
+            <li class="text-left">❌ Paiement à chaque utilisation</li>
+            <li class="text-left">❌ Analyses incomplètes</li>
+            <li class="text-left">❌ Données en retard de plusieurs mois</li>
+            <li>ㅤ</li>
+            <li class="mt-6 italic">Environ 10 000 nouvelles données <span class="text-[#CD3041]">peu fiables</span> par semaine</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex justify-center align-center">
+        <button class="bg-[#202020] border-4 mt-4 transition duration-300 border-[#74A950] dark:bg-[#F2F0E3] rounded-2xl text-white dark:text-black px-4 hover:bg-[#74A951] py-2 text-3xl font-bold"
+                onclick="location.href='https://autos-occas.streamlit.app/'">S'inscrire</button>
+      </div>
+
+        <div class="flex justify-center mt-24"></div>
+          <p>
+            Fait par <a href="https://github.com/ZefusX" target="_blank" class="text-[#375381]">Zefus X</a>
+          </p>
+        </div>
+    </div>
+    <svg id="mouse" height="30px" width="30px" class="fill-[#F2F0E3] dark:fill-[#202020]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.62,0,0,114.611,0,256c0,141.38,114.62,256,256,256s256-114.62,256-256C512,114.611,397.38,0,256,0z M256,486.4 C128.956,486.4,25.6,383.044,25.6,256S128.956,25.6,256,25.6S486.4,128.956,486.4,256S383.044,486.4,256,486.4z"></path> </g> </g> <g> <g> <path d="M256,76.8c-98.97,0-179.2,80.23-179.2,179.2S157.03,435.2,256,435.2S435.2,354.97,435.2,256S354.97,76.8,256,76.8z M268.8,103.049c58.078,4.821,107.102,41.993,128.811,93.483l-111.283,36.156c-4.463-5.803-10.496-10.24-17.528-12.74V103.049z M256,243.2c7.057,0,12.8,5.743,12.8,12.8s-5.743,12.8-12.8,12.8s-12.8-5.743-12.8-12.8S248.943,243.2,256,243.2z M243.2,103.049 v116.898c-7.023,2.5-13.056,6.946-17.527,12.74l-111.283-36.156C136.098,145.041,185.122,107.87,243.2,103.049z M102.4,256 c0-12.083,1.544-23.791,4.198-35.081l111.104,36.096c0.205,7.689,2.603,14.814,6.682,20.727l-68.599,94.404 C123.162,343.962,102.4,302.396,102.4,256z M256,409.6c-29.116,0-56.269-8.294-79.497-22.426l68.676-94.515 c3.456,1.024,7.04,1.741,10.82,1.741c3.789,0,7.373-0.717,10.829-1.741l68.668,94.515C312.269,401.306,285.116,409.6,256,409.6z M356.207,372.147l-68.591-94.413c4.079-5.914,6.468-13.039,6.673-20.727l111.104-36.096c2.662,11.298,4.207,23.006,4.207,35.089 C409.6,302.396,388.838,343.962,356.207,372.147z"></path> </g> </g> </g></svg>
+  </body>
+
+</html>
+
+<style>
+  .font-classic {
+    font-family: "Bricolage Grotesque", serif;
+    font-optical-sizing: auto;
+  }
+
+  .font-other {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+  }
+
+  .font-other-2 {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+  }
+
+  .car {
+    transition: transform 0.2s ease;
+  }
+
+  .dark-mode {
+    background-color: #F2F0E3;
+    color: #202020;
+  }
+
+  .light-mode {
+    background-color: #202020;
+    color: #F2F0E3
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: #F2F0E3;
+    background: #362825;
+  }
+
+  ::selection {
+    color: #F2F0E3;
+    background: #362825;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+     cursor: none;
+  }
+
+  #mouse {
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+
+</style>
+
+<script>
+  ScrollReveal({ reset: true }).reveal(".subsection", { delay: 200 });
+
+  const carIcon = document.querySelector("img");
+  let scale = 1; // Échelle initiale
+  let growthRate = 0.01; // Taux de croissance initial
+  let isGrowing = false; // Indique si l'icône est en train de grossir
+  let animationFrame;
+  const maxScale = 2; // Taille maximale
+
+  function grow() {
+    if (isGrowing && scale < maxScale) {
+      scale += growthRate; // Augmente la taille
+      growthRate *= 1.05; // Rend la croissance plus rapide
+      if (scale > maxScale) {
+        scale = maxScale; // Limite la taille à la valeur maximale
+      }
+      carIcon.style.transform = `scale(${scale})`; // Applique la transformation
+      animationFrame = requestAnimationFrame(grow); // Continue l'animation
+    }
+  }
+
+  function resetGrowth() {
+    isGrowing = false; // Arrête la croissance
+    cancelAnimationFrame(animationFrame); // Stoppe l'animation
+    scale = 1; // Réinitialise l'échelle
+    growthRate = 0.01; // Réinitialise le taux de croissance
+    carIcon.style.transform = `scale(1)`; // Réinitialise la transformation
+  }
+
+  carIcon.addEventListener("mouseenter", () => {
+    isGrowing = true;
+    grow();
+  });
+
+  carIcon.addEventListener("mouseleave", resetGrowth);
+  const themeToggle = document.getElementById("theme-toggle");
+  const darkIcon = document.getElementById("theme-toggle-dark-icon");
+  const lightIcon = document.getElementById("theme-toggle-light-icon");
+
+  // Vérifie et applique le thème sauvegardé
+  if (localStorage.getItem("theme") === "dark" || 
+      (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    document.documentElement.classList.add("dark");
+    darkIcon.classList.remove("hidden");
+  } else {
+    lightIcon.classList.remove("hidden");
+  }
+
+  // Basculer entre les thèmes clair et sombre
+  themeToggle.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+    
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      darkIcon.classList.remove("hidden");
+      lightIcon.classList.add("hidden");
+    } else {
+      localStorage.setItem("theme", "light");
+      darkIcon.classList.add("hidden");
+      lightIcon.classList.remove("hidden");
+    }
+  });
+
+  const cursor = document.getElementById('mouse');
+    
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+</script>
